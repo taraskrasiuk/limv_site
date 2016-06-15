@@ -1,0 +1,23 @@
+@import "options";
+// icons
+.link-icons {
+  font-size: $mainFontSize*1.5;
+  color: #fff;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  padding: $mainPadding /2;
+  & .icon,
+  & .icon__description {
+    text-align: left;
+    display: inline-block;
+    margin-left: $mainPadding;
+  }
+  & .icon {
+    cursor: pointer;
+  }
+  & .icon__description {
+    width: $mainPadding * 4;
+    font-size: $mainFontSize;
+  }
+}

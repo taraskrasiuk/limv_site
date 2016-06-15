@@ -1,0 +1,13 @@
+<div class="col-md-3 col-xs-4">
+  <div class="list-group" ng-repeat="(key, value) in main.kitchens">
+    <p>{{key}}</p>
+
+    <div class="list-group" ng-repeat="kitchen in value track by $index">
+      <span>
+        <a href="#/kitchens/{{kitchen.id}}">
+          {{kitchen.name}}
+        </a>
+        </span>
+    </div>
+  </div>
+</div>

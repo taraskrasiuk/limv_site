@@ -1,0 +1,41 @@
+@import 'options';
+.kitchen {
+
+  &__name {
+    display: flex;
+    color: $darkGrayColor;
+    border-bottom: 1px solid $darkGrayColor;
+    font-size: $mainFontSize * 4;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom : $mainPadding;
+
+    & > span {
+      flex: 10;
+    }
+
+    .kitchensNavigation {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .btn-custom {
+        border-radius: 50%;
+        width: $mainPadding * 4;
+        height: $mainPadding * 4;
+        margin-left: $mainPadding * .5;
+        margin-bottom: $mainPadding/2;
+      }
+
+
+    }
+  }
+  &__images {
+
+    &_image {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+

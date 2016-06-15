@@ -1,0 +1,12 @@
+$mainPadding: 16px;
+$mainColor : #337ab7;
+$secondColor: #1dabff;
+$darkMainColor : #23527c;
+$s : darken($mainColor, 10%);
+$darkGrayColor : #343434;
+$mainFontSize : 16px;
+$whiteColor : #fff;
+$lightGrayColor : #b4b4b4;
+@mixin boxShadow {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.58);
+}

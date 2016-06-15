@@ -1,0 +1,90 @@
+@import "options";
+header.header {
+  border: none;
+  margin: 0;
+  background: $darkMainColor;
+  padding: 0;
+}
+.header-wrapper {
+  .navbar {
+    margin-bottom: 0;
+  }
+  .navbar.navbar-default {
+    border: none;
+    border-radius: 0;
+    background: #fff;
+    li a {
+      color: $darkGrayColor;
+    }
+  }
+}
+// links in navigation
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:focus {
+  background: #fff;
+  color: $mainColor;
+  border-bottom: 1px solid $darkGrayColor;
+}
+
+
+
+.header-brand {
+  padding: ($mainPadding * 2) 0;
+  & h1, h2, h4 {
+    margin: 0;
+  }
+  &_flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  &__col {
+    width: 33%;
+    &_icons {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    &_brand {
+      .brand {
+        font-size: $mainFontSize * 4;
+        & > a {
+          display: inline-block;
+          border: 1px solid #fff;
+          padding: 16px;
+          text-decoration: none;
+          color: #fff;
+          background: $mainColor;
+          @include boxShadow();
+        }
+      }
+    }
+
+    &_brand-description{
+    }
+  }
+}
+
+@media screen and(max-width: 460px){
+  .header-brand {
+    padding: $mainPadding 0;
+    &_flex{
+      flex-direction: column;
+    }
+
+    &__col {
+      width: 100%;
+      text-align: center;
+      margin: $mainPadding 0;
+
+      .brand__description {
+        text-align: center;
+      }
+      .brand__description_sub{
+        text-align: center;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,10 @@
+
+@import "options";
+
+.footer {
+  background: lighten($mainColor, 20%);
+
+  .copyright {
+    color: #fff;
+  }
+}

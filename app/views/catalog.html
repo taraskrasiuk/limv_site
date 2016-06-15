@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <!--<div class="col-md-3 col-xs-4">-->
+
+    <!--</div>-->
+    <div class="col-md-12 col-xs-12 page__title_col" ng-repeat="type in catalogCtrl.allTypes">
+      <h3 class="page__title">
+        kitchen
+      </h3>
+      <div class="row" ng-repeat="(key, value) in catalogCtrl.catalogByType(type)">
+        <h5>{{key}}</h5>
+        <div class="col-xs-6 col-md-4" ng-repeat="item in value track by $index">
+          <a href="#/kitchens/{{item.id}}" class="thumbnail" >
+            <img ng-src="/kitchens/{{item.name}}/{{item.images[0]}}"
+                 alt="{{item.name}}"
+                  class="img-responsive"
+                 style="height: 150px"
+            >
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
