@@ -21,10 +21,10 @@
       align-items: center;
       .btn-custom {
         border-radius: 50%;
-        width: $mainPadding * 4;
-        height: $mainPadding * 4;
-        margin-left: $mainPadding * .5;
-        margin-bottom: $mainPadding/2;
+        width: $mainPadding * 3;
+        height: $mainPadding * 3;
+        margin-left: $mainPadding * .3;
+        margin-bottom: $mainPadding/1.5;
       }
 
 
@@ -38,4 +38,5 @@
     }
   }
 }
+
 

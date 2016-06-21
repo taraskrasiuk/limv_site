@@ -32,12 +32,29 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 }
 
 // add wrapper
-.background-wrapper {
+.wrapper {
   background: $whiteColor;
-  padding: $mainPadding /2;
-  margin: 0 -$mainPadding /2;
+  padding: $mainPadding;
+  overflow: hidden;
 }
+.thumbnail-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 
+}
+.thumbnail-custom {
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  padding: $mainPadding;
+  .caption > h3 {
+    line-height: 36px;
+  }
+}
 // end MY styles
 
 .browsehappy {

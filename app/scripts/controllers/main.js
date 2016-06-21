@@ -15,7 +15,7 @@ angular.module('limStoreApp')
     $scope.showCurrentLocation = function(){
 
     }
-    $scope.navigationLink = 'Home';
+    $scope.navigationLink = $scope.activeLink='Home';
     $scope.switchNavLink = function(nav){
       $scope.activeLink = nav;
     }

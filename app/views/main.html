@@ -1,52 +1,29 @@
 <!--slider-->
 <div class="container">
-  <div class="background-wrapper">
-    <div style="height: 470px">
-      <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
-        <uib-slide ng-repeat="slide in mainImagesForSlider" index="$index">
-          <img ng-src="{{slide}}" style="margin:auto; height: 470px">
-        </uib-slide>
-      </uib-carousel>
+  <div class="wrapper">
+    <div class="kitchen__header">
+      <h3 class="kitchen__name">
+        <span>Line of individual furniture</span>
+      </h3>
+    </div>
+    <div class="col-md-12 col-xs-12">
+      <div style="">
+        <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+          <uib-slide ng-repeat="slide in mainImagesForSlider" index="$index">
+            <img ng-src="{{slide}}" style="margin:auto; height: 470px">
+          </uib-slide>
+        </uib-carousel>
+      </div>
     </div>
   </div>
 </div>
 
-<!--thumbnails-->
-<!--<div class="container">
-  <div class="row">
-    <div class="col-sm-4 col-md-4">
-      <div class="thumbnail">
-        <div class="caption">
-          <h3>Thumbnail label</h3>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4 col-md-4">
-      <div class="thumbnail">
-        <div class="caption">
-          <h3>Thumbnail label</h3>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4 col-md-4">
-      <div class="thumbnail">
-        <div class="caption">
-          <h3>Thumbnail label</h3>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>-->
+
 <div class="container">
-  <div class="background-wrapper">
+  <div class="wrapper">
     <div class="row">
       <div class="col-xs-12">
         <div class="main__aboutUs">
-          <div class="cox-xs-12 page__title_col">
-            <h3 class="page__title">
-              Кухонная мебель, “Линия индивидуальной мебели” — фабрика Вашей кухни!
-            </h3>
-          </div>
           <p class="main__aboutUs_description">
             На сегодняшний день фабрика мебели "Велес-с" (производитель мебели, кухонной мебели, кухонь) является
             динамично развивающимся предприятием, предлагающим большой ассортимент продукции, выступающей под нашим
@@ -68,5 +45,33 @@
         </div>
       </div>
     </div>
+
+    <div class="row">
+      <!--thumbnails-->
+        <div class="thumbnail-wrapper">
+          <div class="thumbnail-wrapper__col">
+            <button class="thumbnail-custom thumbnail-custom_about btn btn-primary">
+              <span class="caption">
+                <span>about us</span>
+              </span>
+            </button>
+          </div>
+          <div class="thumbnail-wrapper__col">
+            <button class="thumbnail-custom thumbnail-custom_catalog btn btn-success">
+              <span class="caption">
+                <span>catalog</span>
+              </span>
+            </button>
+          </div>
+          <div class="thumbnail-wrapper__col">
+            <button class="thumbnail-custom thumbnail-custom_contacts btn btn-warning">
+              <span class="caption">
+                <span>contacts</span>
+              </span>
+            </button>
+          </div>
+      </div>
+    </div>
   </div>
 </div>
+

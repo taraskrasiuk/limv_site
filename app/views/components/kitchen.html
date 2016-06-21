@@ -1,11 +1,12 @@
 <div class="container">
-  <div class="background-wrapper">
   <div class="row">
     <div class="col-xs-3">
-      <furniture-list></furniture-list>
+      <div class="wrapper">
+        <furniture-list></furniture-list>
+      </div>
     </div>
     <div class="col-xs-9">
-      <div class="col-xs-12">
+      <div class="wrapper">
         <div class="kitchen__header">
           <h3 class="kitchen__name">
             <span>{{kitchen.name}}</span>
@@ -15,23 +16,19 @@
             </div>
           </h3>
         </div>
-
         <div class="kitchen">
-          <!-- <h3 class="kitchen__name">
-             {{kitchen.name}}
-           </h3>-->
           <div class="row kitchen__slider">
             <div class="col-xs-12">
-              <div style="minHeight: 200px">
+              <div style="height: auto">
                 <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
                   <uib-slide ng-repeat="img in kitchen.images" index="$index">
-                    <img ng-src="{{'/kitchens/' + kitchen.name + '/'+ img}}" style="margin:auto; height: 470px" alt="{{kitchen.name}}">
+                    <img ng-src="{{'/kitchens/' + kitchen.name + '/'+ img}}" style="margin:auto; max-height: 280px"
+                         alt="{{kitchen.name}}">
                   </uib-slide>
                 </uib-carousel>
               </div>
             </div>
           </div>
-
           <div class="row">
             <div class="col-xs-12" ng-repeat="descr in kitchen.description">
               <h5 class="page-header">
@@ -42,41 +39,15 @@
               </small>
             </div>
           </div>
-
-
         </div>
       </div>
-
-      </div>
     </div>
-
-  </div>
-
-  <div class="row">
-    <div class="col-md-2 col-xs-2">
-    <!--<div uib-collapse="!isCollapsed">-->
-
-    <!--</div>-->
-    </div>
-    <div class="col-md-10 col-xs-10">
-
-
-  </div>
   </div>
 </div>
 
-<!--
-
- <div class="col-md-12 col-xs-12">
-            <img ng-src="{{selectedImage}}" class="img-responsive" alt="">
-          </div>
-          <div class="kitchen__images">
-            <div class="row">
-                <div class="col-xs-4 col-md-3" ng-repeat="img in kitchen.images">
-                  <a href="" class="thumbnail" ng-click="kitchenCtrl.cahngeImage(img)">
-                    <img ng-src="{{'/kitchens/' + kitchen.name + '/'+ img}}" alt="{{kitchen.name}}">
-                  </a>
-                </div>
-            </div>
-          </div>
--->
+<div class="row">
+  <div class="col-md-2 col-xs-2">
+  </div>
+  <div class="col-md-10 col-xs-10">
+  </div>
+</div>
